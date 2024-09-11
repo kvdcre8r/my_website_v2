@@ -1,0 +1,122 @@
+.about {
+  --feature-color-pt2: rgb(70, 251, 70);
+  --text-outline-feature-pt2: -1px 0 var(--feature-color-pt2),
+    0 1px var(--feature-color-pt2), 1px 0 var(--feature-color-pt2),
+    0 -1px var(--feature-color-pt2);
+  background-color: var(--section-color);
+  border: var(--border);
+  border-radius: 5px;
+  display: flex;
+
+  .about_left {
+    float: left;
+    width: 100%;
+
+    #animated_developer {
+      background-image: url("./animated-developer.png");
+      background-position-y: 1em;
+      background-size: cover;
+      border: none;
+      box-shadow: none;
+      color: var(--section-color);
+      font-size: 40px;
+      font-family: champion;
+      width:max-content;
+      /* height: 800px; */
+      text-shadow: var(--text-outline);
+
+      h2 {
+        font-size: 36px;
+        padding-bottom: 120px;
+      }
+
+      h3 {
+        font-size: 26px;
+        padding-bottom: 5px;
+        padding-top: 20px;
+      }
+
+      p {
+        color: var(--border-color);
+        font-size: 18px;
+        text-shadow: var(--text-outline-light);
+      }
+    }
+  }
+
+  .about_right {
+    float: left;
+    width: 100%;
+
+    .part_two {
+      color: var(--feature-color-pt2);
+    }
+
+    #narration {
+      p {
+        font-size: 25px;
+        text-align: left;
+        border: 1px solid var(--feature-color-pt2);
+        color: var(--text-color);
+        background-color: rgba(0, 109, 199, 0.662);
+        border: 1px solid var(--body-color);
+        border-radius: 3px;
+        padding: 10px;
+        margin: 10px 20px;
+        width: fit-content;
+      }
+
+      p:nth-of-type(2) {
+        margin-left: 40px;
+      }
+    }
+
+    #superpowers {
+      color: var(--body-color);
+      text-shadow: var(--text-outline-feature-pt2);
+
+      margin: 30px;
+      padding-bottom: 35px;
+      text-align: center;
+
+      h2 {
+        font-size: 350%;
+        padding: 22px;
+      }
+
+      h3 {
+        font-size: 250%;
+        text-wrap: balance;
+      }
+    }
+
+    #allies {
+      background-color: rgba(0, 109, 199, 0.662);
+      background-image: none;
+      border-radius: 3px;
+      border: 1px solid var(--body-color);
+      color: var(--text-color);
+      font-family: spyagency;
+      padding: 20px;
+      margin: 18px 2em;
+
+      h3 {
+        background-color: var(--section-color);
+        border: 1px solid lightblue;
+        border-radius: 3px;
+        font-size: 24px;
+        font-weight: 100;
+        margin-left: 0;
+        padding: 2px;
+        width: fit-content;
+      }
+
+      p {
+        text-wrap: pretty;
+        font-size: 18px;
+        font-weight: 50;
+        padding: 15px;
+      }
+    }
+  }
+}

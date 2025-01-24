@@ -1,0 +1,98 @@
+.portfolio {
+  --feature-color-pt3: rgb(255, 136, 156);
+  --text-outline-feature-pt3: -1px 0 var(--feature-color-pt3),
+    0 1px var(--feature-color-pt3), 1px 0 var(--feature-color-pt3),
+    0 -1px var(--feature-color-pt3);
+  --section-color: rgb(2, 120, 199);
+
+  /* left column */
+  .port-left {
+    float: left;
+    width: 25%;
+    height: 100%;
+
+    .part_three {
+      color: var(--feature-color-pt3);
+      font-size: 120%;
+      background-image: none;
+      background-color: rgba(0, 0, 139, 0.699);
+    }
+
+    .lc_headings {
+      margin-bottom: 10px;
+    }
+
+    .lc_content {
+      background-image: none;
+      border: 2px solid;
+    }
+
+    li {
+      font-size: 20px;
+      color: rgb(255, 166, 181);
+      text-shadow: var(--text-outline-feature-dark);
+      list-style-type: square;
+    }
+
+    #project_list {
+      padding-bottom: 30px;
+    }
+
+    #exp_list {
+      padding-bottom: 30px;
+    }
+  }
+
+  /* center column */
+  #port-center {
+    float: left;
+    width: 75%;
+  }
+
+  .project_headings {
+    color: var(--feature-color-pt3);
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .port_center_contents {
+    display: inline-flex;
+    font-size: 0.7em;
+  }
+
+  .images {
+    width: 350px;
+    height: 250px;
+    background-color: var(--border-color);
+    border-radius: 3px;
+    padding: 1px;
+    border: 2px solid var(--body-color);
+    margin: 10px;
+  }
+
+  .portfolio_descs {
+    font-family: monospace;
+    padding: 5px 0px;
+    font-size: 180%;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    a {
+      padding-right: 10px;
+    }
+  }
+
+  article {
+    background-image: none;
+    background-color: rgba(0, 0, 139, 0.699);
+
+    a {
+      color: inherit;
+    }
+
+    p {
+      padding: 10px;
+    }
+  }
+}

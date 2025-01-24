@@ -10,7 +10,7 @@
 
   .home_left {
     float: left;
-    width: 100%;
+    width: 60vw;
 
     .part_one {
       color: var(--feature-color-pt1);
@@ -19,7 +19,7 @@
 
     #narration {
       p {
-        font-size: 25px;
+        font-size: 20px;
         text-align: left;
         color: var(--text-color);
         background-color: rgba(0, 109, 199, 0.896);
@@ -39,6 +39,7 @@
       color: var(--header-color);
       text-shadow: var(--text-outline-feature-pt1);
       border: 1px solid var(--body-color);
+      font-family: champion;
       border-radius: 5px;
       background-color: rgba(87, 179, 255, 0.754);
       margin: 20px auto 30px auto;
@@ -64,7 +65,6 @@
       border-radius: 5px;
       border: 1px solid var(--body-color);
       color: var(--text-color);
-      font-family: spyagency;
       padding: 5px 5px 5px 10px;
       margin: 10px 2em;
 
@@ -89,8 +89,7 @@
   }
 
   .home_right {
-    /* float: right; */
-    width: 100%;
+    width: auto;
 
     #profile_pic {
       background-color: rgba(0, 0, 0, 0);
@@ -106,6 +105,7 @@
       h2 {
         color: var(--section-color);
         font-size: 40px;
+        font-family: champion;
         margin-left: 50px;
         margin-top: -5px;
         text-shadow: var(--text-outline);
@@ -119,6 +119,7 @@
       border-radius: 0;
       box-shadow: none;
       color: var(--section-color);
+      font-family: champion;
       display: flex;
       align-items: center;
       margin-left: 0;
@@ -140,23 +141,24 @@
     #toolbelt {
       color: var(--section-color);
       background-color: var(--section-color);
-      background: none;
+      font-family: champion;
+      background-image: none;
       border: none;
       border-radius: 0;
       box-shadow: none;
-      width: 350px;
-      height: 200px;
 
       h3 {
-        margin-top: 0px;
-        margin-left: -10px;
         font-size: 28px;
         text-shadow: var(--text-outline);
       }
 
       #dev-logos {
-        width: 70%;
-        margin: 20px;
+        width: 180px;
+        background-color: var(--border-color);
+        border: 1px solid var(--body-color);
+        border-radius: 5px;
+        margin-top: 5px;
+        padding: 0 15px;
       }
     }
   }

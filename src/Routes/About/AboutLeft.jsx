@@ -2,8 +2,7 @@ export default function AboutLeft() {
   return (
     <main>
       <section className="about_left">
-        <article>
-          <div id="animated_developer">
+        <article id="animated_developer">
             <h2>"The Super-Developer"</h2>
             <h3>Location:</h3>
             <p>- O'Fallon, MO</p>
@@ -28,7 +27,6 @@ export default function AboutLeft() {
               - Puzzles, Legos, Disc Golf, Chess, Anything Sci-Fi
               <br />- Enjoying the outdoors
             </p>
-          </div>
         </article>
       </section>
     </main>

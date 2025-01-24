@@ -10,7 +10,7 @@
 
   .about_left {
     float: left;
-    width: 100%;
+    width: 30vw;
 
     #animated_developer {
       background-image: url("./animated-developer.png");
@@ -21,7 +21,6 @@
       color: var(--section-color);
       font-size: 40px;
       font-family: champion;
-      width:max-content;
       /* height: 800px; */
       text-shadow: var(--text-outline);
 
@@ -37,6 +36,7 @@
       }
 
       p {
+        margin: 0;
         color: var(--border-color);
         font-size: 18px;
         text-shadow: var(--text-outline-light);
@@ -45,8 +45,7 @@
   }
 
   .about_right {
-    float: left;
-    width: 100%;
+    width: auto;
 
     .part_two {
       color: var(--feature-color-pt2);
@@ -54,7 +53,7 @@
 
     #narration {
       p {
-        font-size: 25px;
+        font-size: 20px;
         text-align: left;
         border: 1px solid var(--feature-color-pt2);
         color: var(--text-color);
@@ -63,7 +62,6 @@
         border-radius: 3px;
         padding: 10px;
         margin: 10px 20px;
-        width: fit-content;
       }
 
       p:nth-of-type(2) {
@@ -74,7 +72,7 @@
     #superpowers {
       color: var(--body-color);
       text-shadow: var(--text-outline-feature-pt2);
-
+      font-family: champion, sans-serif;
       margin: 30px;
       padding-bottom: 35px;
       text-align: center;
@@ -96,9 +94,8 @@
       border-radius: 3px;
       border: 1px solid var(--body-color);
       color: var(--text-color);
-      font-family: spyagency;
       padding: 20px;
-      margin: 18px 2em;
+      margin: 18px;
 
       h3 {
         background-color: var(--section-color);
@@ -115,7 +112,7 @@
         text-wrap: pretty;
         font-size: 18px;
         font-weight: 50;
-        padding: 15px;
+        padding: 10px;
       }
     }
   }

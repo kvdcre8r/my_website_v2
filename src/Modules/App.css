@@ -8,6 +8,7 @@
   --section-color: rgb(2, 120, 199);
   --page-title-color: rgb(19, 22, 40);
   --text-color: white;
+  --highlight-color: greenyellow;
 
   --border: 2px solid var(--border-color);
   --border-thin: 1px solid var(--border-color);
@@ -18,16 +19,19 @@
     1px 0 var(--section-color), 0 -1px var(--section-color);
   --text-outline-dark: -1px 0 var(--header-color), 0 1px var(--header-color),
     1px 0 var(--header-color), 0 -1px var(--header-color);
+  --text-outline-bright: -1px 0 var(--highlight-color),
+    0 1px var(--highlight-color), 1px 0 var(--highlight-color),
+    0 -1px var(--highlight-color);
+}
 
-  body {
-    display: flex;
-    margin: 0;
-    place-items: center;
-    min-width: 320px;
-    min-height: 100vh;
-    background-color: var(--body-color);
-    padding: 0 10px;
-  }
+body {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  min-height: 100vh;
+  height: fit-content;
+  background-color: var(--body-color);
+  padding: 0;
 }
 
 /* HEADER */
@@ -82,7 +86,7 @@
     display: block;
     float: left;
     border: 2px solid var(--header-color);
-    color: greenyellow;
+    color: var(--highlight-color);
     text-shadow: var(--text-outline-dark);
     font-size: 16px;
     padding: 14px 16px;
@@ -101,6 +105,7 @@
 
   :hover {
     background-color: var(--border-color);
+    text-shadow: var(--text-outline-bright);
     color: var(--header-color);
   }
 
@@ -117,12 +122,7 @@
 
 /* MAIN CONTENT */
 main {
-  section {
-    margin-top: -68.5px;
-    padding-top: 68.5px;
-  }
-
-  section::after {
+  m section::after {
     clear: both;
     content: "";
     display: block;
@@ -137,7 +137,7 @@ main {
     border-radius: 3px;
     box-shadow: var(--box-shadow);
     color: var(--text-color);
-    font-family: champion;
+    font-family: monospace;
     margin: 10px;
     padding: 10px;
     text-shadow: var(--text-outline-dark);

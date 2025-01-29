@@ -122,7 +122,7 @@ body {
 
 /* MAIN CONTENT */
 main {
-  m section::after {
+  section::after {
     clear: both;
     content: "";
     display: block;
@@ -160,208 +160,6 @@ main {
   }
 }
 
-/* HOME SECTION */
-
-/* ABOUT SECTION */
-
-/* PORTFOLIO SECTION */
-#portfolio {
-  /* left column */
-  #port-left {
-    float: left;
-    width: 25%;
-    height: 100%;
-  }
-
-  .lc_headings {
-    margin-bottom: 10px;
-  }
-
-  .lc_content {
-    background-image: none;
-    border: 2px solid;
-  }
-
-  li {
-    font-size: 25px;
-  }
-
-  ol,
-  ul {
-    padding-bottom: 30px;
-  }
-
-  /* center column */
-  #port-center {
-    float: left;
-    width: 50%;
-  }
-
-  .port_center_contents {
-    display: inline-flex;
-    align-items: center;
-    font-size: 80%;
-    background-color: rgba(0, 0, 139, 0.699);
-    border: 2px solid;
-    border-radius: 3px;
-  }
-
-  .images {
-    width: 180px;
-    background-color: var(--border-color);
-    border-radius: 3px;
-    padding: 1px;
-    border: 2px solid var(--body-color);
-    margin: 2px;
-  }
-
-  /* right column */
-  #port-right {
-    float: left;
-    width: 25%;
-  }
-
-  .port_right_contents {
-    font-size: 90%;
-    background-color: rgba(0, 0, 139, 0.699);
-    border: 2px solid;
-    border-radius: 3px;
-    padding-bottom: 20%;
-  }
-
-  #website_image {
-    width: 100%;
-    background-color: var(--border-color);
-    padding: 1px;
-    border: 3px solid var(--body-color);
-    border-radius: 3px;
-    margin-bottom: 20px;
-  }
-
-  /* both center and right columns */
-  .project_headings {
-    text-align: center;
-    margin-bottom: 10px;
-  }
-
-  .portfolio_descs {
-    font-size: 180%;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-}
-
-/* CONTACT SECTION */
-#contact {
-  /* left column */
-  #contact-left {
-    float: left;
-    width: 75%;
-  }
-
-  #contact_info_title {
-    font-size: 250%;
-    padding-bottom: 20px;
-  }
-
-  form {
-    border: 2px solid;
-    border-radius: 5px;
-    background-color: rgba(0, 0, 139, 0.699);
-    padding: 20px;
-  }
-
-  #form_blocking {
-    display: flex;
-    color: var(--feature-color-pt2);
-    font-family: spyagency;
-    font-size: 70%;
-  }
-
-  .form_col_heading {
-    text-shadow: -1px 0 var(--feature-color-pt2), 0 1px var(--feature-color-pt2),
-      1px 0 var(--feature-color-pt2), 0 -1px var(--feature-color-pt2);
-    margin-bottom: 0.5em;
-  }
-
-  label {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-  }
-
-  input {
-    width: 150px;
-  }
-
-  /* confirmation dialog */
-  dialog {
-    top: 25%;
-    width: 50%;
-    background-color: rgba(0, 0, 139, 0.927);
-    border: var(--border);
-    border-radius: 4px;
-  }
-
-  #dialog-content {
-    height: fit-content;
-    font-family: spyagency;
-    font-size: 24px;
-    text-align: center;
-    color: var(--feature-color-pt2);
-    text-shadow: -1px 0 var(--header-color), 0 1px var(--header-color),
-      1px 0 var(--header-color), 0 -1px var(--header-color);
-    padding: 10px;
-    border-radius: 3px;
-  }
-
-  button {
-    color: var(--body-color);
-    background-color: var(--feature-color-pt2);
-    border-radius: 5px;
-    font-family: spyagency;
-    font-size: 20px;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    display: block;
-  }
-
-  button:hover {
-    color: var(--feature-color-pt2);
-    background-color: var(--body-color);
-    border-color: var(--feature-color-pt2);
-  }
-
-  /* RIGHT COLUMN */
-  #contact-right {
-    float: left;
-    width: 25%;
-  }
-
-  #rc_content {
-    background-image: url("components/animated-developer2.png");
-    background-position: top;
-    padding-bottom: 0px;
-    height: 525px;
-  }
-
-  #rc_title {
-    font-size: 180%;
-    padding-bottom: 150px;
-  }
-
-  .contact_meta_name {
-    padding-top: 30px;
-  }
-
-  a.contact_link {
-    color: var(--border-color);
-    font-family: champion;
-    font-size: 120%;
-    text-shadow: -1px 0 var(--body-color), 0 1px var(--body-color),
-      1px 0 var(--body-color), 0 -1px var(--body-color);
-  }
-}
-
 /* FOOTER */
 .footer {
   padding: 20px;
@@ -392,24 +190,9 @@ main {
 }
 
 /* RESPONSIVE BEHAVIOR */
-@media screen and (max-width: 1024px) {
-  #port-center,
-  #port-right {
-    width: 75%;
-    padding: 0;
-  }
-}
 
-@media (max-width: 800px) {
-  /* .heading {
-    h1 {
-      font-size: 180%;
-    }
 
-    h3 {
-      font-size: 105%;
-    }
-  } */
+@media screen and (max-width: 850px) {
 
   nav a {
     font-size: 12px;
@@ -422,12 +205,12 @@ main {
 
   .home {
     .home_left {
-      width: 100%;
+      width: 100vw;
       padding: 0;
     }
 
     .home_right {
-      width: 100%;
+      width: 100vw;
       padding: 0;
     }
 

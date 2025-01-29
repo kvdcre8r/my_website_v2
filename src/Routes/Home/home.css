@@ -162,4 +162,19 @@
       }
     }
   }
+  @media screen and (max-width: 850px) {
+    flex-direction: column;
+    .home_left {
+      width: 90vw;
+    }
+
+    .home_right {
+      width: 90vw;
+
+      #profile_pic {
+        width: 300px;
+        margin-left: 50px;
+      }
+    }
+  }
 }

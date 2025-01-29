@@ -3,13 +3,14 @@
   --text-outline-feature-pt3: -1px 0 var(--feature-color-pt3),
     0 1px var(--feature-color-pt3), 1px 0 var(--feature-color-pt3),
     0 -1px var(--feature-color-pt3);
-  --section-color: rgb(2, 120, 199);
-
+    background-color: var(--section-color);
+    border: var(--border);
+    border-radius: 5px;
+    display: flex;
   /* left column */
   .port-left {
     float: left;
     width: 25%;
-    height: 100%;
 
     .part_three {
       color: var(--feature-color-pt3);
@@ -94,5 +95,16 @@
     p {
       padding: 10px;
     }
+  }
+  @media screen and (max-width: 850px) {
+    flex-direction: column;
+    .port_left {
+      width: 100%;
+    }
+
+    #port-center {
+      width: 100%;
+    }
+    
   }
 }

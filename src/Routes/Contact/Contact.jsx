@@ -1,23 +1,43 @@
-import styled from "styled-components";
+import "./contact.css";
 
 export function Contact() {
-  const Title = styled.h1`
-    font-family: spyagency;
-    font-size: 1.5em;
-    text-align: center;
-    color: var(--text-color);
-  `;
-  const SubTitle = styled.h3`
-    font-family: champion;
-  `;
-  const Wrapper = styled.section`
-    padding: 4em;
-    background: var(--header-color);
-  `;
   return (
-    <Wrapper>
-      <Title>Hello World!</Title>
-      <SubTitle>Hello app...</SubTitle>
-    </Wrapper>
+    <main>
+      <section id="contact">
+        <div className="column" id="contact-left">
+          <h2 className="page_title part_four">Epilogue: Learn More!</h2>
+          <article>
+            <p>
+              If you think I might be a good fit for your team, or you would
+              like to learn more about what this super-powered web developer can
+              do for you, please reach out to me... I'd love to hear from you
+              today!
+            </p>
+          </article>
+        </div>
+        <div className="column" id="contact-right">
+          <article id="rc_content">
+            <h2 id="rc_title">Social Media</h2>
+            <h2 className="contact_meta_name">Google:</h2>
+            <a className="contact_link" href="">
+              kvdcre8r@gmail.com
+            </a>
+            <h2 className="contact_meta_name">LinkedIn:</h2>
+            <a
+              className="contact_link"
+              href="https://www.linkedin.com/in/kevinvandonkelaar"
+            >
+              linkedin.com/in/
+              <br />
+              kevinvandonkelaar
+            </a>
+            <h2 className="contact_meta_name">GitHub:</h2>
+            <a className="contact_link" href="https://github.com/kvdcre8r">
+              github.com/kvdcre8r
+            </a>
+          </article>
+        </div>
+      </section>
+    </main>
   );
 }

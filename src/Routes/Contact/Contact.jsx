@@ -17,7 +17,7 @@ export function Contact() {
         </div>
         <div className="column" id="contact-right">
           <article id="rc_content">
-            <h2 id="rc_title">Social Media</h2>
+            <h2 id="rc_title">Contact Info</h2>
             <h2 className="contact_meta_name">Google:</h2>
             <a className="contact_link" href="">
               kvdcre8r@gmail.com
